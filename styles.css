@@ -1,0 +1,164 @@
+/* General CSS */
+.body{
+    margin: 0px;
+}
+
+/* navbar and dropdown extra styling*/
+.navbar-brand{
+    font-size: 1.8em;
+}
+
+.dropdown-item {
+    text-align: center;
+}
+
+.input-group-text {
+    border-radius: 8px;
+    height: auto;
+    /* border: 1px red solid; */
+}
+
+/* .input-group {
+    border: 1px solid green;
+}
+
+.form-check{
+    border: 2px blueviolet solid;
+} */
+
+/* main content styling (email content area) */
+.main-mail {
+    background-color: rgba(0,0,0,0.1);
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.emailList {
+    padding: 0 1rem;
+}
+
+.emailWindow {
+    border: 2px rgba(140,0,0,0.3) solid;
+    background-color: rgba(140,0,0,0.2);
+    border-radius: 10px;
+}
+
+.sender-name {
+    display: flex;
+    overflow: hidden;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+.email-subject {
+    font-size: 1.1rem;
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+p {
+    padding: 0px 8px;
+}
+
+.sender-preview {
+    display: flex;
+    align-items: center;
+    min-height: 85px;
+    max-height: 95px;
+    padding-left: 5px;
+}
+
+i.bi-person-circle {
+    display: flex;
+    font-size: 2.5rem;
+    padding: 0px 10px;
+}
+
+.reply-email {
+    display: flex;
+    justify-content: center;
+}
+
+.reply-buttons {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+/* .form-check-input {
+    border: 2px solid black;
+    border-top-right-radius: 5;
+    border-bottom-right-radius: 5;
+}
+
+.input-group {
+    border: 2px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+
+
+/* grid row and column css */
+.my-row{
+    /* border: 3px solid blueviolet; */
+    height: 350px;
+    width: auto;
+}
+
+.top-row {
+    /* border: 3px solid blueviolet; */
+    height: 60px;
+    width: auto;
+    padding: 1%;
+    background-color: rgba(140,0,0,0.2);
+    border-radius: 10px;
+}
+
+.my-col{
+    /* border: 3px dotted rgb(45, 255, 66); */
+    min-height: 300px;
+    align-items: stretch;
+}
+
+.top-col{
+    /* border: 3px dotted rgb(255, 115, 45); */
+    align-items: stretch;
+    min-height: 50px;
+    padding-left: 1%;
+}
+
+
+/* link and button extra styling */
+.e-button {
+    padding: 15px 10px;
+}
+
+a:hover {
+    color: rgba(0,0,0,0.9);
+}
+
+input[type=checkbox] {
+    transition: background-color 0.1s ease-in;
+    /* border-top-right-radius:5; */
+    clip-path: circle(42% at 50% 50%);
+    background-color: rgba(154, 144, 144, 0.3);
+}
+
+input[type=checkbox]:hover {
+    background-color: rgba(140,0,0,0.2);
+}
+
+.selected-1  {
+    background-color: rgba(140,0,0,0.2);
+}
+
+.selected {
+    transition: background-color 0.7s ease;
+}
+
+.selected:hover  {
+    border: 1px rgba(140,0,0,0.3) solid;
+    background-color: rgba(174, 174, 174, 0.121);
+}
