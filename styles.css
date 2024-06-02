@@ -1,6 +1,12 @@
 /* General CSS */
 .body{
-    margin: 0px;
+    margin: 0;
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* navbar and dropdown extra styling*/
@@ -18,36 +24,39 @@
     /* border: 1px red solid; */
 }
 
-/* .input-group {
-    border: 1px solid green;
-}
-
-.form-check{
-    border: 2px blueviolet solid;
-} */
 
 /* main content styling (email content area) */
-.main-mail {
+.main-mail-section {
     background-color: rgba(0,0,0,0.1);
-    padding: 2%;
+    padding: 1rem;
     border-radius: 15px;
+    min-height: 70vh;
+    margin-top: 10px;
+}
+
+.folder-bar > * {
+    min-height: 5.3em;
 }
 
 .emailList {
     padding: 0 1rem;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .emailWindow {
     border: 2px rgba(140,0,0,0.3) solid;
     background-color: rgba(140,0,0,0.2);
     border-radius: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .sender-name {
     display: flex;
-    overflow: hidden;
     font-size: 1.3rem;
     margin-bottom: 0px;
+    overflow-wrap: break-word;
 }
 
 .email-subject {
@@ -87,28 +96,13 @@ i.bi-person-circle {
     margin: 1rem;
 }
 
-/* .form-check-input {
-    border: 2px solid black;
-    border-top-right-radius: 5;
-    border-bottom-right-radius: 5;
-}
-
-.input-group {
-    border: 2px solid black;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-} */
-
-
 /* grid row and column css */
 .my-row{
-    /* border: 3px solid blueviolet; */
     height: 350px;
     width: auto;
 }
 
 .top-row {
-    /* border: 3px solid blueviolet; */
     height: 60px;
     width: auto;
     padding: 1%;
@@ -117,13 +111,11 @@ i.bi-person-circle {
 }
 
 .my-col{
-    /* border: 3px dotted rgb(45, 255, 66); */
-    min-height: 300px;
+    min-height: 400px;
     align-items: stretch;
 }
 
 .top-col{
-    /* border: 3px dotted rgb(255, 115, 45); */
     align-items: stretch;
     min-height: 50px;
     padding-left: 1%;
@@ -141,7 +133,6 @@ a:hover {
 
 input[type=checkbox] {
     transition: background-color 0.1s ease-in;
-    /* border-top-right-radius:5; */
     clip-path: circle(42% at 50% 50%);
     background-color: rgba(154, 144, 144, 0.3);
 }
@@ -156,9 +147,14 @@ input[type=checkbox]:hover {
 
 .selected {
     transition: background-color 0.7s ease;
+    overflow-wrap: break-word;
 }
 
 .selected:hover  {
     border: 1px rgba(140,0,0,0.3) solid;
     background-color: rgba(174, 174, 174, 0.121);
 }
+
+/* .mark-important:focus {
+    background-color: blueviolet;
+} */
