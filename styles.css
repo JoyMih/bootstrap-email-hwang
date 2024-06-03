@@ -24,6 +24,9 @@
     /* border: 1px red solid; */
 }
 
+/* textarea {
+    min-height: 500px;
+} */
 
 /* main content styling (email content area) */
 .main-mail-section {
@@ -42,6 +45,7 @@
     padding: 0 1rem;
     overflow-y: auto;
     scrollbar-width: none;
+    overflow-wrap: break-word;
 }
 
 .emailWindow {
@@ -122,7 +126,7 @@ i.bi-person-circle {
 }
 
 
-/* link and button extra styling */
+/* Interactive components and extra styling */
 .e-button {
     padding: 15px 10px;
 }
@@ -155,6 +159,6 @@ input[type=checkbox]:hover {
     background-color: rgba(174, 174, 174, 0.121);
 }
 
-/* .mark-important:focus {
-    background-color: blueviolet;
-} */
+.mark-important {
+    background-color: rgba(138,43,226,0.6);
+}

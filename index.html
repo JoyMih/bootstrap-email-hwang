@@ -79,8 +79,8 @@
                 class="d-flex col top-col align-items-center justify-content-center col-sm-5 col-md-4 col-lg-5 col-4 flex-grow-2">
                 <div class="d-flex selected input-group-text flex-grow-1">
                     <div class="input-group d-flex">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckAll" aria-label="">
-                        <label class="form-check-label ps-1 flex-grow-1" for="flexCheckAll">
+                        <input class="form-check-input" type="checkbox" value="" id="check-all" onchange="checkAll(this)" aria-label="">
+                        <label class="form-check-label ps-1 flex-grow-1" for="check-all">
                             Pick All
                         </label>
                     </div>
@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label>Message:</label>
-                                    <textarea class="form-control" aria-label="Text input for email"></textarea>
+                                    <textarea class="form-control" rows="6" aria-label="Text input for email"></textarea>
                                 </div>
                             </div>
 
@@ -205,9 +205,9 @@
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck1" aria-label="">
+                        <input class="form-check-input" type="checkbox" value="" id="check-1" aria-label="">
                     </div>
-                    <label class="form-check-label selected selected-1 ps-2 pe-2 form-control" for="flexCheck1">
+                    <label class="form-check-label selected selected-1 ps-2 pe-2 form-control" for="check-1">
                         Your Nanna: I baked you cookies
                     </label>
 
@@ -215,9 +215,9 @@
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2" aria-label="">
+                        <input class="form-check-input" type="checkbox" value="" id="check-2" aria-label="">
                     </div>
-                    <label class="form-check-label selected ps-2 pe-2 form-control" for="flexCheck2">
+                    <label class="form-check-label selected ps-2 pe-2 form-control" for="check-2">
                         Your Nanna: Chocolate and Raisin
                     </label>
 
@@ -225,9 +225,9 @@
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck3" aria-label="">
+                        <input class="form-check-input" type="checkbox" value="" id="check-3" aria-label="">
                     </div>
-                    <label class="form-check-label selected ps-2 pe-2 form-control" for="flexCheck3">
+                    <label class="form-check-label selected ps-2 pe-2 form-control" for="check-3">
                         Your Nanna: Your favorite snack
                     </label>
 
@@ -235,9 +235,9 @@
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck4" aria-label="">
+                        <input class="form-check-input" type="checkbox" value="" id="check-4" onchange="" aria-label="">
                     </div>
-                    <label class="form-check-label selected ps-2 pe-2 form-control" for="flexCheck4">
+                    <label class="form-check-label selected ps-2 pe-2 form-control" for="check-4">
                         Twitter: Grandma goes viral for adorable emails
                     </label>
 
@@ -245,9 +245,9 @@
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck5" aria-label="">
+                        <input class="form-check-input" type="checkbox" value="" id="check-5" aria-label="">
                     </div>
-                    <label class="form-check-label selected ps-2 pe-2 form-control" for="flexCheck5">
+                    <label class="form-check-label selected ps-2 pe-2 form-control" for="check-5">
                         Costco: Shipping Confirmation #345678910
                     </label>
 
@@ -255,9 +255,9 @@
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck6" aria-label="">
+                        <input class="form-check-input" type="checkbox" value="" id="check-6" aria-label="">
                     </div>
-                    <label class="form-check-label selected ps-2 pe-2 form-control" for="flexCheck6">
+                    <label class="form-check-label selected ps-2 pe-2 form-control" for="check-6">
                         Reddit: New message from u/FrierenBestAnime2024
                     </label>
 
@@ -278,8 +278,9 @@
                             data-bs-target="#composeEmail"><i class="bi bi-reply"></i></button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                             data-bs-target="#composeEmail"><i class="bi bi-reply-all"></i></button>
-                        <button type="button" class="btn btn-danger mark-important"><i class="bi bi-bookmark-star"></i></button>
-                        <button type="button" class="btn btn-danger"><i class="bi bi-forward"></i></button>
+                        <button type="button" class="btn btn-danger" id="bookmark" onclick="toggleClass(); changeIcon(this)"><i class="bi bi-bookmark-star"></i></button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#composeEmail"><i class="bi bi-forward"></i></button>
                     </div>
                 </div>
                 <p>Hi Betty, this is Nanna</p>
@@ -308,7 +309,7 @@
         crossorigin="anonymous"></script>
 
     <!-- add potential javascript file here -->
-    <!-- <script src="emails.js"></script> -->
+    <script src="emails.js"></script>
 </body>
 
 </html>
