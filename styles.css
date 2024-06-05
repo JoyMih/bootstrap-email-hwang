@@ -13,6 +13,9 @@
 .navbar-brand{
     font-size: 1.8em;
 }
+.navbar {
+    margin-bottom: 10px;
+}
 
 .dropdown-item {
     text-align: center;
@@ -24,9 +27,6 @@
     /* border: 1px red solid; */
 }
 
-/* textarea {
-    min-height: 500px;
-} */
 
 /* main content styling (email content area) */
 .main-mail-section {
@@ -100,23 +100,21 @@ i.bi-person-circle {
     margin: 1rem;
 }
 
-/* grid row and column css */
-.my-row{
-    height: 350px;
-    width: auto;
-}
-
-.top-row {
-    height: 60px;
-    width: auto;
-    padding: 1%;
+.buttons-row {
+    height: auto;
+    padding: 0.5%;
     background-color: rgba(140,0,0,0.2);
     border-radius: 10px;
+    margin-top: 5px;
 }
 
-.my-col{
-    min-height: 400px;
-    align-items: stretch;
+img {
+    display: flex;
+    max-height: 80px;
+    width: 80px;
+    margin: auto;
+    border-radius: 45px;
+    border: 1px solid rgba(0,0,0,0.4);
 }
 
 .top-col{
@@ -124,7 +122,6 @@ i.bi-person-circle {
     min-height: 50px;
     padding-left: 1%;
 }
-
 
 /* Interactive components and extra styling */
 .e-button {

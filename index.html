@@ -69,107 +69,117 @@
 
 
         <!-- The top row containing the EMAIL SELECTION button and COMPOSE button-->
-        <div class="top-row d-flex align-items-center flex-grow-1">
-
-            <!-- Blank space on the top left to allow for the other columns to grow appropriately -->
-            <div class="d-flex top-col align-items-center d-none d-sm-block col-md-2 col-lg-2 flex-grow-1"></div>
-
-            <!-- The SELECT ALL EMAILS button, titled "Pick All" -->
-            <div
-                class="d-flex col top-col align-items-center justify-content-center col-sm-5 col-md-4 col-lg-5 col-4 flex-grow-2">
-                <div class="d-flex selected input-group-text flex-grow-1">
-                    <div class="input-group d-flex">
-                        <input class="form-check-input" type="checkbox" value="" id="check-all" onchange="checkAll(this)" aria-label="">
-                        <label class="form-check-label ps-1 flex-grow-1" for="check-all">
-                            Pick All
-                        </label>
+        <div class="d-flex align-items-center flex-grow-1">
+            <div class="d-flex flex-wrap flex-grow-1">
+                <!-- Blank space on the top left to allow for the other columns to grow appropriately -->
+                <div class="d-flex top-col align-content-center col-12 col-sm-2 col-md-2 col-lg-2 flex-grow-2">
+                    <div class="d-flex testbox col-12 col-sm-12 col-md-12 col-lg-12">
+                        <img src="SublimeApparel-Logo-JoyHwang.png">
                     </div>
                 </div>
-            </div>
 
-            <!-- The toggle: hamburger-style off-canvas side menu (appears on small and xs screens, as well as smartphone device widths)-->
-            <div
-                class="col top-col toggle-sidebar d-flex align-items-center justify-content-center col-4 d-sm-none d-md-none d-lg-none d-xl-none">
-                <button class="btn btn-warning offcanvas-bar" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvas" aria-controls="offcanvas">
-                    Folders
-                </button>
-                
-                <!-- The contents within the collapsable off-canvas sidebar that contains the folders menu on smaller screens-->
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                    <div class="offcanvas-header">
-                        <h5 id="offcanvasLabel">Folders and More</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div>
-                            Emails are important to check often. Click on a folder below.
+                <!-- The SELECT ALL EMAILS button, titled "Pick All" -->
+                <div class="d-flex buttons-row align-items-center col-12 col-sm-5 col-md-10 col-lg-10 flex-grow-1">
+                    <div
+                        class="d-flex top-col align-items-center justify-content-center col-4 col-sm-6 col-md-5 col-lg-6 flex-grow-2">
+                        <div class="d-flex selected input-group-text flex-grow-1">
+                            <div class="input-group d-flex">
+                                <input class="form-check-input" type="checkbox" value="" id="check-all"
+                                    onchange="checkAll(this)" aria-label="">
+                                <label class="form-check-label flex-grow-1" for="check-all">
+                                    Pick All
+                                </label>
+                            </div>
                         </div>
-
-                        <div class="d-flex my-col btn-group-vertical mt-4" role="group"
-                            aria-label="Vertical button group">
-                            <button type="button" class="btn btn-info">Inbox</button>
-                            <button type="button" class="btn btn-info">Important</button>
-                            <button type="button" class="btn btn-info">Drafts</button>
-                            <button type="button" class="btn btn-info">Spam</button>
-                            <button type="button" class="btn btn-info">Trash</button>
-                            <button type="button" class="btn btn-info">Chats</button>
-                            <button type="button" class="btn btn-info">Promotions</button>
-                        </div>
-
                     </div>
 
-                </div>
+                    <!-- The toggle: hamburger-style off-canvas side menu (appears on small and xs screens, as well as smartphone device widths)-->
+                    <div
+                        class="col top-col toggle-sidebar d-flex align-items-center justify-content-center col-4 d-sm-none d-md-none d-lg-none d-xl-none">
+                        <button class="btn btn-warning offcanvas-bar" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas" aria-controls="offcanvas">
+                            Folders
+                        </button>
 
-            </div>
-
-            <!-- The COMPOSE email (modal trigger) button-->
-            <div
-                class="col top-col compose-email d-flex align-items-center justify-content-center col-4 col-sm-7 col-md-6 col-lg-5 flex-grow-2">
-                <!-- col-5 col-md-6 col-lg-5 d-none d-sm-block flex-grow-2 -->
-                <button type="button" class="btn btn-outline-danger " data-bs-toggle="modal"
-                    data-bs-target="#composeEmail">
-                    Compose
-                </button>
-
-                <!-- The "Compose New Email" screen that pops up when triggering the Modal/COMPOSE Button -->
-                <div class="modal fade" id="composeEmail" tabindex="-1" aria-labelledby="composeEmailLabel"
-                    aria-hidden="true">
-
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="composeEmailLabel">New Email</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <!-- The contents within the collapsable off-canvas sidebar that contains the folders menu on smaller screens-->
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
+                            aria-labelledby="offcanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasLabel">Folders and More</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-
-                            <div class="modal-body">
-                                <div class="mb-3">
-                                    <label>Send to:</label>
-                                    <input type="email" class="form-control" aria-label="Text input for email address"
-                                        placeholder="email@ultraemail.com">
+                            <div class="offcanvas-body">
+                                <div>
+                                    Emails are important to check often. Click on a folder below.
                                 </div>
-                                <div class="mb-3">
-                                    <label>Message:</label>
-                                    <textarea class="form-control" rows="6" aria-label="Text input for email"></textarea>
-                                </div>
-                            </div>
 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schedule
-                                    Send</button>
-                                <button type="button" class="btn btn-primary">Send</button>
+                                <div class="d-flex btn-group-vertical mt-4" role="group"
+                                    aria-label="Vertical button group">
+                                    <button type="button" class="btn btn-info">Inbox</button>
+                                    <button type="button" class="btn btn-info">Important</button>
+                                    <button type="button" class="btn btn-info">Drafts</button>
+                                    <button type="button" class="btn btn-info">Spam</button>
+                                    <button type="button" class="btn btn-info">Trash</button>
+                                    <button type="button" class="btn btn-info">Chats</button>
+                                    <button type="button" class="btn btn-info">Promotions</button>
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                </div>
+                    <!-- The COMPOSE email (modal trigger) button-->
+                    <div
+                        class="col top-col compose-email d-flex align-items-center justify-content-center col-4 col-sm-5 col-md-7 col-lg-6 flex-grow-1">
+                        <button type="button" class="d-flex btn btn-outline-danger me-1 flex-grow-1"
+                            data-bs-toggle="modal" data-bs-target="#composeEmail">
+                            Compose
+                        </button>
 
+                        <!-- The "Compose New Email" screen that pops up when triggering the Modal/COMPOSE Button -->
+                        <div class="modal fade" id="composeEmail" tabindex="-1" aria-labelledby="composeEmailLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="composeEmailLabel">New Email</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label>Send to:</label>
+                                            <input type="email" class="form-control"
+                                                aria-label="Text input for email address"
+                                                placeholder="email@ultraemail.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label>Message:</label>
+                                            <textarea class="form-control" rows="6"
+                                                aria-label="Text input for email"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schedule
+                                            Send</button>
+                                        <button type="button" class="btn btn-primary">Send</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -178,7 +188,7 @@
         <div class="main-mail-section d-flex flex-grow-1">
 
             <!-- The main large folders side-bar located at the very left (appears at md, lg, and xl screen-widths with folder names) -->
-            <div class="d-flex my-col folder-bar btn-group-vertical col-md-2 col-lg-2 d-none d-sm-block flex-grow-1"
+            <div class="d-flex folder-bar btn-group-vertical col-md-2 col-lg-2 d-none d-sm-block flex-grow-1"
                 role="group" aria-label="Vertical button group">
                 <button type="button" class="btn btn-info align-items-center e-button">Inbox</button>
                 <button type="button" class="btn btn-info align-items-center e-button">Important</button>
@@ -201,7 +211,7 @@
 
             <!-- The email list (shows the message title and sender, in central column with checkboxes) -->
             <div
-                class="d-flex col my-col emailList flex-column justify-content-md-start col-sm-5 col-md-4 col-lg-5 col-12 flex-grow-2">
+                class="d-flex col emailList flex-column justify-content-md-start col-sm-5 col-md-4 col-lg-5 col-12 flex-grow-2">
                 <div class="input-group d-flex">
 
                     <div class="input-group-text">
@@ -264,10 +274,10 @@
                 </div>
             </div>
             <!-- The email preview window (rightmost column, disappears at smaller screen widths) -->
-            <div class="d-flex col my-col emailWindow ps-2 pe-2 col-5 col-md-6 col-lg-5 d-none d-sm-block flex-grow-2">
+            <div class="d-flex col emailWindow ps-2 pe-2 col-5 col-md-6 col-lg-5 d-none d-sm-block flex-grow-2">
                 <div class="sender-preview">
 
-                <!-- The first Email is being shown here -->
+                    <!-- The first Email is being shown here -->
                     <i class="bi bi-person-circle"></i>
                     <p class="sender-name">From: Your Nanna</p>
                 </div>
@@ -278,9 +288,11 @@
                             data-bs-target="#composeEmail"><i class="bi bi-reply"></i></button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                             data-bs-target="#composeEmail"><i class="bi bi-reply-all"></i></button>
-                        <button type="button" class="btn btn-danger" id="bookmark" onclick="toggleClass(); changeIcon(this)"><i class="bi bi-bookmark-star"></i></button>
+                        <button type="button" class="btn btn-danger" id="bookmark"
+                            onclick="toggleClass(); changeIcon(this)"><i class="bi bi-bookmark-star"></i></button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#composeEmail"><i class="bi bi-forward"></i></button>
+                            data-bs-target="#composeEmail"><i class="bi bi-forward"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
                     </div>
                 </div>
                 <p>Hi Betty, this is Nanna</p>
