@@ -42,6 +42,7 @@
                                 aria-expanded="false">
                                 More Settings
                             </a>
+
                             <!-- Dropdown menu options located within the navbar -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Log Out</a></li>
@@ -68,10 +69,10 @@
         </nav>
 
 
-        <!-- The top row containing the EMAIL SELECTION button and COMPOSE button-->
+        <!-- The top row containing the PROFILE IMAGE, EMAIL SELECTION button, and COMPOSE button-->
         <div class="d-flex align-items-center flex-grow-1">
             <div class="d-flex flex-wrap flex-grow-1">
-                <!--  Area on the top left containing "profile picture"; this area shrinks to a full col-12 banner in small -->
+                <!--  Area on the top left containing "profile image"; this area shrinks to a full col-12 banner in small -->
                 <div class="d-flex top-col align-content-center col-12 col-sm-2 col-md-2 col-lg-2 flex-grow-2">
                     <div class="d-flex testbox col-12 col-sm-12 col-md-12 col-lg-12">
                         <img src="SublimeApparel-Logo-JoyHwang.png">
@@ -93,7 +94,7 @@
                         </div>
                     </div>
 
-                    <!-- The toggle: hamburger-style off-canvas side menu (appears on small and xs screens, as well as smartphone device widths)-->
+                    <!-- THE TOGGLE MENU: hamburger-style off-canvas side menu (appears on small and xs screens, as well as smartphone device widths)-->
                     <div
                         class="col top-col toggle-sidebar d-flex align-items-center justify-content-center col-4 d-sm-none d-md-none d-lg-none d-xl-none">
                         <button class="btn btn-warning offcanvas-bar" type="button" data-bs-toggle="offcanvas"
@@ -114,6 +115,7 @@
                                     Emails are important to check often. Click on a folder below.
                                 </div>
 
+                                <!-- The folder menu items for the offcanvas collapsable pop up -->
                                 <div class="d-flex btn-group-vertical mt-4" role="group"
                                     aria-label="Vertical button group">
                                     <button type="button" class="btn btn-info">Inbox</button>
@@ -184,7 +186,7 @@
 
         </div>
 
-        <!-- The main row containing the 3 main columns (vertical folders bar, email list, email preview pane) -->
+        <!-- The next main row (aka second main row) containing the 3 main columns (vertical folders bar, email list, email preview pane) -->
         <div class="main-mail-section d-flex flex-grow-1">
 
             <!-- The main large folders side-bar located at the very left (appears at md, lg, and xl screen-widths with folder names) -->
@@ -200,6 +202,7 @@
                     More+
                 </button>
 
+                <!-- The dropdown containing a few more options on the menu -->
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Chats</a></li>
                     <li><a class="dropdown-item" href="#">Promotions</a></li>
@@ -209,7 +212,7 @@
 
 
 
-            <!-- The email list (shows the message title and sender, in central column with checkboxes) -->
+            <!-- The email list located in the middle column of the second main row (shows the message title and sender, in central column with checkboxes) -->
             <div
                 class="d-flex col emailList flex-column justify-content-md-start col-sm-5 col-md-4 col-lg-5 col-12 flex-grow-2">
                 <div class="input-group d-flex">
@@ -273,11 +276,13 @@
 
                 </div>
             </div>
-            <!-- The email preview window (rightmost column, disappears at smaller screen widths) -->
+
+
+            <!-- The Email preview window (rightmost column in the second main row, which disappears at smaller screen widths) -->
             <div class="d-flex col emailWindow ps-2 pe-2 col-5 col-md-6 col-lg-5 d-none d-sm-block flex-grow-2">
                 <div class="sender-preview">
 
-                    <!-- The first Email is being shown here -->
+                    <!-- The first Email within the list is being displayed here as an example of an opened email -->
                     <i class="bi bi-person-circle"></i>
                     <p class="sender-name">From: Your Nanna</p>
                 </div>
@@ -312,7 +317,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- add potential javascript file here -->
+    <!-- The javascript file for specific page interactions -->
     <script src="emails.js"></script>
 </body>
 
